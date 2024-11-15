@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phishing Mail Detector</title>
+    <link rel="stylesheet" href="popupstyle.css" />
+  </head>
+  <body>
+    <div class="popup">
+      <header class="header">
+        <img src="icons/phishing_9967065.png" alt="icon" class="header-icon" />
+        <span class="extension-name">Phishing Mail Detector</span>
+      </header>
+
+      <!-- Scan Email button -->
+      <div class="grid-item">
+        <button id="checkButton" class="grid-btn">
+          <img src="icons/prediction_1753950.png" alt="Scan" class="btn-icon" />
+          Scan Email
+        </button>
+      </div>
+      <p id="result" class="centered-result">Scan result will appear here</p>
+
+      <!-- Dashboard button -->
+      <div class="grid-item">
+        <button id="dashboardButton" class="grid-btn">
+          <img
+            src="icons/memories_5234693.png"
+            alt="Dashboard"
+            class="btn-icon"
+          />
+          Dashboard
+        </button>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spam Detection Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar" id="sidebar">
+        <div class="profile">
+          <img src="../icons/logo.jpeg" alt="Profile" />
+          <h2>Stinky</h2>
+        </div>
+        <ul>
+          <li>
+            <a href="dashboard.html"
+              ><i class="fas fa-tachometer-alt"></i>Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="history.html"><i class="fas fa-history"></i>History</a>
+          </li>
+          <li>
+            <a href="blocked.html"><i class="fas fa-ban"></i>Blocked</a>
+          </li>
+          <li>
+            <a href="about us.html"
+              ><i class="fas fa-info-circle"></i>About Us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="main-content" id="mainContent">
+        <header>
+          <h1>Dashboard</h1>
+        </header>
+        <div class="overview-cards">
+          <div class="card">
+            <i class="fas fa-envelope-open-text"></i>
+            <h3>Total Scanned Emails</h3>
+            <p class="count" id="total-scanned-count"></p>
+          </div>
+          <div class="card">
+            <i class="fas fa-exclamation-circle"></i>
+            <h3>Spam Detected</h3>
+            <p class="count" id="spam-detected-count"></p>
+          </div>
+          <div class="card">
+            <i class="fas fa-check-circle"></i>
+            <h3>Non-Spam Detected</h3>
+            <p class="count" id="non-spam-detected-count"></p>
+          </div>
+          <div class="card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Detection Accuracy</h3>
+            <p class="count" id="detection-accuracy">97.4%</p>
+          </div>
+        </div>
+
+        <div class="detection-graphs">
+          <div class="detection-graph">
+            <h2>Spam Detection Activity</h2>
+            <canvas id="barChart"></canvas>
+          </div>
+          <div class="detection-graph">
+            <h2>Spam vs Non-Spam Emails</h2>
+            <canvas id="pieChart"></canvas>
+          </div>
+        </div>
+
+        <div class="email-list">
+          <h2>Detected Emails</h2>
+          <table id="scan-history-table"></table>
+        </div>
+        <footer>
+          <p>2024 Spam Detection System</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="chart/chart.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>

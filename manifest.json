@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Stinky Phishing Detector",
+  "version": "1.0",
+  "description": "Detect phishing emails and website URLs using a Flask API",
+  "permissions": [
+    "tabs",
+    "notifications",
+    "storage",
+    "contextMenus",
+    "scripting",
+    "activeTab",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "<all_urls>"
+  ],
+
+  "host_permissions": [
+    "<all_urls>",
+    "http://localhost:5000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/phishing_9967065.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
