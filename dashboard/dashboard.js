@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 datasets: [{
                     label: 'Scan Results',
                     data: data,
-                    backgroundColor: ['#A91D3A', '#ffa90b'],
+                    backgroundColor: ['#ff0000', '#008000'],
                     borderColor: '#EEEEEE',
                     borderWidth: 1
                 }]
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 datasets: [{
                     label: 'Number of Scans',
                     data: data,
-                    backgroundColor: ['#A91D3A', '#ffa90b'],
+                    backgroundColor: ['#ff0000', '#008000'],
                     borderColor: '#151515',
                     borderWidth: 1
                 }]
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const header = document.createElement('thead');
             header.innerHTML = `
                 <tr>
-                    <th>#</th>
+                    <th></th>
                     <th>Sender</th>
                     <th>Title</th>
                     <th>Result</th>
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>${scan.result}</td>
                         <td>${scan.timestamp || 'N/A'}</td>
                         <td><button class="delete-btn" data-index="${index}"
-                            style="background-color: #dc3545; color: white; border: none; border-radius: 5px; padding: 8px 12px; cursor: pointer;">Delete</button></td>
+                            style="background-color: #800000; color: white; border: #191C24; border-radius: 5px; padding: 8px 12px; cursor: pointer;">Delete</button></td>
                     `;
                     scanHistoryTable.appendChild(row);
                 });
