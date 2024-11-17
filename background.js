@@ -231,7 +231,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         if (tab.url && (tab.url.startsWith("http://") || tab.url.startsWith("https://"))) {
             const currentUrl = tab.url;
 
-            if (isWhitelisted(currentUrl)) {
+            if (whitelistUrl(currentUrl)) {
                 console.log("URL is whitelisted, skipping scan:", currentUrl);
                 return;
             }

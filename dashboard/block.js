@@ -1,23 +1,26 @@
-// Function to load blocked URLs from chrome.storage.local and display them
 function loadBlockedUrls() {
     chrome.storage.local.get({ blockedUrls: [] }, (data) => {
         const blockedUrls = data.blockedUrls;
-       
 
         const tableBody = document.getElementById("blocked-urls");
-        
-        // Clear any existing rows
-        tableBody.innerHTML = '';
+        tableBody.innerHTML = ''; // Clear previous entries
 
         if (blockedUrls.length === 0) {
-            
+            const row = document.createElement('tr');
+            const cell = document.createElement('td');
+            cell.colSpan = 3;
+            cell.textContent = "No blocked URLs.";
+            row.appendChild(cell);
+            tableBody.appendChild(row);
         } else {
-            // Populate the table with blocked URLs and add an Unblock button
-            blockedUrls.forEach((url) => {
+            blockedUrls.forEach(({ url, timestamp }) => {
                 const row = document.createElement('tr');
-                
+
                 const urlCell = document.createElement('td');
                 urlCell.textContent = url;
+
+                const dateCell = document.createElement('td');
+                dateCell.textContent = timestamp;
 
                 const actionCell = document.createElement('td');
                 const unblockButton = document.createElement('button');
@@ -27,13 +30,15 @@ function loadBlockedUrls() {
 
                 actionCell.appendChild(unblockButton);
                 row.appendChild(urlCell);
+                row.appendChild(dateCell);
                 row.appendChild(actionCell);
+
                 tableBody.appendChild(row);
             });
-            
         }
     });
 }
+
 
 
 // Request to unblock URL via message to background

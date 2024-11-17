@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blocked URLs - Stinky Phishing Detector</title>
+    <title>Whitelisted URLs</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -36,26 +36,24 @@
           </li>
         </ul>
       </div>
-
       <div class="main-content">
         <header>
-          <h1>Blocked URLs</h1>
+          <h1>Whitelisted URLs</h1>
         </header>
         <table>
           <thead>
             <tr>
               <th>URL</th>
-              <th>Date Blocked</th>
+              <th>Date</th>
               <th>Action</th>
             </tr>
           </thead>
-
-          <tbody id="blocked-urls">
-            <!-- Blocked URLs will be populated here -->
+          <tbody id="whitelisted-urls">
+            <!-- Whitelisted URLs will be populated here -->
           </tbody>
         </table>
       </div>
     </div>
-    <script src="block.js"></script>
+    <script src="whitelist.js"></script>
   </body>
 </html>
