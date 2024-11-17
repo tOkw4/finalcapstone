@@ -1,8 +1,10 @@
-function loadBlockedUrls() {
-    chrome.storage.local.get({ blockedUrls: [] }, (data) => {
-        const blockedUrls = data.blockedUrls;
+// Load blocked URLs when the page loads
+document.addEventListener('DOMContentLoaded', loadBlockedUrls);
 
-        const tableBody = document.getElementById("blocked-urls");
+function loadBlockedUrls() {
+    chrome.storage.local.get('blockedUrls', (data) => {
+        const blockedUrls = data.blockedUrls || [];
+        const tableBody = document.getElementById('blocked-urls');
         tableBody.innerHTML = ''; // Clear previous entries
 
         if (blockedUrls.length === 0) {
@@ -25,7 +27,6 @@ function loadBlockedUrls() {
                 const actionCell = document.createElement('td');
                 const unblockButton = document.createElement('button');
                 unblockButton.textContent = 'Unblock';
-                unblockButton.classList.add('unblock-btn');
                 unblockButton.onclick = () => requestUnblockUrl(url);
 
                 actionCell.appendChild(unblockButton);
@@ -39,9 +40,6 @@ function loadBlockedUrls() {
     });
 }
 
-
-
-// Request to unblock URL via message to background
 function requestUnblockUrl(url) {
     chrome.runtime.sendMessage({ action: "unblockUrl", url }, (response) => {
         if (response && response.success) {

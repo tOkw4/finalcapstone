@@ -1,7 +1,6 @@
 function loadWhitelistedUrls() {
     chrome.storage.local.get({ whitelist: [] }, (data) => {
-        const whitelist = data.whitelist;
-
+        const whitelist = data.whitelist || [];
         const tableBody = document.getElementById("whitelisted-urls");
         tableBody.innerHTML = ''; // Clear previous entries
 
@@ -20,7 +19,7 @@ function loadWhitelistedUrls() {
                 urlCell.textContent = url;
 
                 const dateCell = document.createElement('td');
-                dateCell.textContent = timestamp;                
+                dateCell.textContent = timestamp;
 
                 const actionCell = document.createElement('td');
                 const removeButton = document.createElement('button');
@@ -38,15 +37,17 @@ function loadWhitelistedUrls() {
     });
 }
 
+
 function requestRemoveWhitelistUrl(url) {
     chrome.runtime.sendMessage({ action: "removeWhitelistUrl", url }, (response) => {
         if (response && response.success) {
             alert(`${url} has been removed from the whitelist!`);
-            loadWhitelistedUrls(); // Reload the list
+            loadWhitelistedUrls(); // Reload the displayed list to reflect changes
         } else {
-            alert(`Failed to remove ${url} from the whitelist.`);
+            alert(`Failed to remove ${url} from whitelist.`);
         }
     });
 }
+
 
 document.addEventListener('DOMContentLoaded', loadWhitelistedUrls);
