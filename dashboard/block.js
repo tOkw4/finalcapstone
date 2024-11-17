@@ -2,7 +2,7 @@
 function loadBlockedUrls() {
     chrome.storage.local.get({ blockedUrls: [] }, (data) => {
         const blockedUrls = data.blockedUrls;
-        console.log("Blocked URLs retrieved from storage:", blockedUrls); // Debug log
+       
 
         const tableBody = document.getElementById("blocked-urls");
         
@@ -10,7 +10,7 @@ function loadBlockedUrls() {
         tableBody.innerHTML = '';
 
         if (blockedUrls.length === 0) {
-            console.log("No blocked URLs to display."); // Debug log
+            
         } else {
             // Populate the table with blocked URLs and add an Unblock button
             blockedUrls.forEach((url) => {
@@ -30,7 +30,7 @@ function loadBlockedUrls() {
                 row.appendChild(actionCell);
                 tableBody.appendChild(row);
             });
-            console.log("Blocked URLs displayed on the page."); // Debug log
+            
         }
     });
 }

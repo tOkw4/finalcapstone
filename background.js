@@ -22,38 +22,36 @@ function saveScanHistory(sender, title, result) {
 // Cache blocked URLs and rule IDs in memory
 let blockedUrlsCache = [];
 let blockedRuleIds = {};  // Map of URLs to rule IDs
+let whitelistCache = []; //whitelist
 
-// Initialize blocked URLs and rule IDs from storage on startup
-chrome.storage.local.get({ blockedUrls: [] }, (data) => {
+// Initialize blocked and whitelisted URLs from storage
+chrome.storage.local.get({ blockedUrls: [], whitelist: [] }, (data) => {
     blockedUrlsCache = data.blockedUrls || [];
+    whitelistCache = data.whitelist || [];
+
+    // Initialize blockedRuleIds
     blockedUrlsCache.forEach((url, index) => {
-        blockedRuleIds[url] = index + 1; // Assign rule ID based on position
+        blockedRuleIds[url] = index + 1;
     });
+
     updateBlockingRules();
 });
 
 // Updated function to fully clear and reload blocking rules
 function updateBlockingRules() {
-    // Remove all current dynamic rules first
     chrome.declarativeNetRequest.getDynamicRules((existingRules) => {
         const removeIds = existingRules.map(rule => rule.id);
 
         chrome.declarativeNetRequest.updateDynamicRules(
             { removeRuleIds: removeIds },
             () => {
-                // Rebuild blockedRuleIds and rules array from blockedUrlsCache
-                const rules = blockedUrlsCache.map((url, index) => {
-                    const ruleId = index + 1;
-                    blockedRuleIds[url] = ruleId;
-                    return {
-                        id: ruleId,
-                        priority: 1,
-                        action: { type: "block" },
-                        condition: { urlFilter: url, resourceTypes: ["main_frame"] }
-                    };
-                });
+                const rules = blockedUrlsCache.map((url, index) => ({
+                    id: index + 1,
+                    priority: 1,
+                    action: { type: "block" },
+                    condition: { urlFilter: url, resourceTypes: ["main_frame"] }
+                }));
 
-                // Apply the new set of rules
                 chrome.declarativeNetRequest.updateDynamicRules({ addRules: rules }, () => {
                     console.log("Blocking rules updated:", rules);
                 });
@@ -62,43 +60,85 @@ function updateBlockingRules() {
     });
 }
 
+function normalizeUrl(url) {
+    try {
+        const normalizedUrl = new URL(url);
+        return normalizedUrl.origin + normalizedUrl.pathname; // Removes query parameters and fragments
+    } catch (e) {
+        console.error("Invalid URL:", url);
+        return url; // Return the original URL if parsing fails
+    }
+}
 
-// Function to block a URL
+
 function blockUrl(url) {
-    if (!blockedUrlsCache.includes(url)) {
-        blockedUrlsCache.push(url);
-        blockedRuleIds[url] = blockedUrlsCache.length; // Assign new rule ID
+    const normalizedUrl = normalizeUrl(url);
+    if (!blockedUrlsCache.includes(normalizedUrl)) {
+        blockedUrlsCache.push(normalizedUrl);
+        blockedRuleIds[normalizedUrl] = blockedUrlsCache.length;
         chrome.storage.local.set({ blockedUrls: blockedUrlsCache }, () => {
             updateBlockingRules();
         });
     }
 }
 
+
+
+
 // Function to unblock a URL and update rules accordingly
 function unblockUrl(url) {
-    if (blockedUrlsCache.includes(url)) {
-        // Remove URL from cache
-        blockedUrlsCache = blockedUrlsCache.filter((blockedUrl) => blockedUrl !== url);
-        delete blockedRuleIds[url]; // Remove rule ID entry
-
-        // Update storage and re-apply rules
+    const normalizedUrl = normalizeUrl(url);
+    if (blockedUrlsCache.includes(normalizedUrl)) {
+        blockedUrlsCache = blockedUrlsCache.filter((blockedUrl) => blockedUrl !== normalizedUrl);
+        delete blockedRuleIds[normalizedUrl];
         chrome.storage.local.set({ blockedUrls: blockedUrlsCache }, () => {
-            console.log(`Unblocked URL: ${url}`);
-            updateBlockingRules();  // Ensure rules are updated after removal
+            updateBlockingRules();
+        });
+    } else {
+        console.log("URL not found in blocked list:", url);
+    }
+}
+
+
+// Function to add a URL to the whitelist
+function whitelistUrl(url) {
+    const normalizedUrl = normalizeUrl(url);
+    if (!whitelistCache.includes(normalizedUrl)) {
+        whitelistCache.push(normalizedUrl);
+        chrome.storage.local.set({ whitelist: whitelistCache }, () => {
+            console.log("Added to whitelist:", normalizedUrl);
         });
     }
 }
 
-// Listener for messages to block or unblock URLs
+function removeWhitelistUrl(url) {
+    const normalizedUrl = normalizeUrl(url);
+    if (whitelistCache.includes(normalizedUrl)) {
+        whitelistCache = whitelistCache.filter((whitelistedUrl) => whitelistedUrl !== normalizedUrl);
+        chrome.storage.local.set({ whitelist: whitelistCache }, () => {
+            console.log("Removed from whitelist:", normalizedUrl);
+        });
+    }
+}
+
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    if (request.action === "blockUrl" && request.url) {
-        blockUrl(request.url);
+    const normalizedUrl = normalizeUrl(request.url);
+    if (request.action === "blockUrl" && normalizedUrl) {
+        blockUrl(normalizedUrl);
         sendResponse({ success: true });
-    } else if (request.action === "unblockUrl" && request.url) {
-        unblockUrl(request.url);
+    } else if (request.action === "unblockUrl" && normalizedUrl) {
+        unblockUrl(normalizedUrl);
+        sendResponse({ success: true });
+    } else if (request.action === "whitelistUrl" && normalizedUrl) {
+        whitelistUrl(normalizedUrl);
+        sendResponse({ success: true });
+    } else if (request.action === "removeWhitelistUrl" && normalizedUrl) {
+        removeWhitelistUrl(normalizedUrl);
         sendResponse({ success: true });
     }
 });
+
+
 
 // Function to log blocked URLs from storage
 function logBlockedUrls() {
@@ -174,48 +214,47 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 });
 
 
-// Listen for URL changes in active tab to scan the URL
+// Normalize URL before checking whitelist
+function normalizeUrl(url) {
+    try {
+        const normalizedUrl = new URL(url);
+        return normalizedUrl.origin + normalizedUrl.pathname; // Removes query parameters and fragments
+    } catch (e) {
+        console.error("Invalid URL:", url);
+        return url; // This return is valid because it's inside the function
+    }
+}
+
+
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    if (changeInfo.status === 'complete' && tab.active) {
+    if (changeInfo.status === "complete" && tab.active) {
         if (tab.url && (tab.url.startsWith("http://") || tab.url.startsWith("https://"))) {
             const currentUrl = tab.url;
-           
 
-            // Send the URL to the Flask API for phishing detection
+            if (isWhitelisted(currentUrl)) {
+                console.log("URL is whitelisted, skipping scan:", currentUrl);
+                return;
+            }
+
+            // Perform phishing detection
             fetch('http://localhost:5000/post', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ URL: currentUrl })
             })
-            .then(response => {
-                if (!response.ok) {
-                    console.error("Server returned error:", response.statusText);
-                }
-                return response.json();
-            })
+            .then(response => response.json())
             .then(data => {
-                console.log("Received response data:", data); 
-                if (data.error) {
-                    console.error("Error from server:", data.error);
-                } else {
-                    const result = data.prediction;
-                    const probability = data.probability;
+                const result = data.prediction;
+                const probability = data.probability;
 
-                    console.log("Sending result to content script:", { result, probability });
-
-                    // Send the result to content.js to display the modal
-                    chrome.tabs.sendMessage(tabId, {
-                        action: 'showUrlScanResult',
-                        result,
-                        probability
-                    });
-                }
+                chrome.tabs.sendMessage(tabId, {
+                    action: 'showUrlScanResult',
+                    result,
+                    probability
+                });
             })
-            .catch(error => {
-                console.error('Error contacting Flask API:', error);
-            });
-        } 
+            .catch(error => console.error("Error contacting Flask API:", error));
+        }
     }
 });
+
