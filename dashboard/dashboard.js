@@ -66,8 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    function loadScanHistory() {
-        // Retrieve scan history from chrome.storage.local
+    function loadScanHistory(showAll = false) {
         chrome.storage.local.get('scanHistory', (data) => {
             const history = data.scanHistory || [];
             console.log("Loaded scan history from chrome.storage.local:", history);
@@ -99,23 +98,44 @@ document.addEventListener('DOMContentLoaded', () => {
             if (history.length === 0) {
                 scanHistoryTable.innerHTML += '<tr><td colspan="6" class="no-history">No scan history available</td></tr>';
             } else {
-                history.forEach((scan, index) => {
-                    const row = document.createElement('tr');
-                    row.innerHTML = `
-                        <td>${index + 1}</td>
-                        <td>${scan.sender}</td>
-                        <td>${scan.title}</td>
-                        <td>${scan.result}</td>
-                        <td>${scan.timestamp || 'N/A'}</td>
-                        <td><button class="delete-btn" data-index="${index}"
-                            style="background-color: #800000; color: white; border: #191C24; border-radius: 5px; padding: 8px 12px; cursor: pointer;">Delete</button></td>
-                    `;
-                    scanHistoryTable.appendChild(row);
+                const displayHistory = showAll ? history : history.slice(0, 5);
+                renderHistoryRows(displayHistory);
+    
+                // Add "See All" or "Close" button
+                const toggleRow = document.createElement('tr');
+                toggleRow.innerHTML = `
+                    <td colspan="6" class="toggle-row" style="text-align: center;">
+                        <button id="toggle-button" style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                            ${showAll ? 'Close' : 'See All'}
+                        </button>
+                    </td>
+                `;
+                scanHistoryTable.appendChild(toggleRow);
+    
+                // Attach click event to toggle button
+                document.getElementById('toggle-button').addEventListener('click', () => {
+                    loadScanHistory(!showAll); // Toggle between full and partial view
                 });
             }
     
             // Update charts with the latest data
             updateCharts(spamDetected, nonSpamDetected);
+        });
+    }
+    
+    function renderHistoryRows(history) {
+        history.forEach((scan, index) => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${index + 1}</td>
+                <td>${scan.sender}</td>
+                <td>${scan.title}</td>
+                <td>${scan.result}</td>
+                <td>${scan.timestamp || 'N/A'}</td>
+                <td><button class="delete-btn" data-index="${index}"
+                    style="background-color: #800000; color: white; border: #191C24; border-radius: 5px; padding: 8px 12px; cursor: pointer;">Delete</button></td>
+            `;
+            scanHistoryTable.appendChild(row);
         });
     }
     
