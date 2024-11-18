@@ -82,10 +82,9 @@ def detect():
 
     # Make a prediction using the model
     prediction = email_model.predict(email_vector_dense)[0]
-    result = 'Be careful, this mail might be a Phishing' if prediction == 1 else "It is a safe mail, don't worry :>"
+    result = "It is a safe mail, don't worry :>" if prediction == 1 else 'Be careful, this mail might be a Phishing'
 
     return jsonify({'result': result})
-
 
 # 2.Checks for IP address in URL (Have_IP)
 

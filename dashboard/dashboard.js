@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 datasets: [{
                     label: 'Scan Results',
                     data: data,
-                    backgroundColor: ['#ff0000', '#008000'], // Colors for each section
+                    backgroundColor: ['#8b0000 ', '#006400 '], // Colors for each section
                     borderColor: '#ffffff', // Border color for the divisions
                     borderWidth: 2 // Border width to make it more visible
                 }]
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 datasets: [{
                     label: 'Number of Scans',
                     data: data,
-                    backgroundColor: ['#ff0000', '#008000'],
+                    backgroundColor: ['#8b0000 ', '#006400 '],
                     borderColor: '#ffffff',
                     borderWidth: 2
                 }]
