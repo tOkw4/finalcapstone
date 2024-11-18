@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
   </head>
@@ -24,7 +28,7 @@
             >
           </li>
           <li>
-            <a href="whitelist.html"><i class="fas fa-history"></i>History</a>
+            <a href="whitelist.html"><i class="fa fa-check"></i>Whitelist</a>
           </li>
           <li>
             <a href="blocked.html"><i class="fas fa-ban"></i>Blocked</a>
@@ -77,11 +81,11 @@
 
         <div class="detection-graphs">
           <div class="detection-graph">
-            <h2>Spam Detection Activity</h2>
+            <h2>Phishing Detection Activity</h2>
             <canvas id="barChart"></canvas>
           </div>
           <div class="detection-graph">
-            <h2>Spam vs Non-Spam Emails</h2>
+            <h2>Phishing vs Non-Phishing Emails</h2>
             <canvas id="pieChart"></canvas>
           </div>
         </div>

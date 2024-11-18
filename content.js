@@ -20,7 +20,7 @@ function showModal(result) {
     modal.style.backgroundColor = '#FFFFFF';
     modal.style.padding = '20px';
     modal.style.borderRadius = '15px';
-    modal.style.border = '1px solid #A91D3A';
+    modal.style.border = '2px solid #000000';
     modal.style.zIndex = 9999;
     modal.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
 
@@ -53,53 +53,120 @@ function showModal(result) {
 
 
 function showUrlScanModal(result, probability) {
+    // Debug the input
+    console.log("Prediction result:", result);
+    console.log("Prediction probability:", probability);
+
+    // Ensure result is a number
+    result = Number(result);
+
+    // Create Modal
     const modal = document.createElement('div');
     modal.style.position = 'fixed';
     modal.style.top = '50%';
     modal.style.left = '50%';
     modal.style.transform = 'translate(-50%, -50%)';
-    modal.style.width = '300px';
+    modal.style.width = '350px';
     modal.style.backgroundColor = '#FFFFFF';
-    modal.style.padding = '20px';
+    modal.style.padding = '25px';
     modal.style.borderRadius = '15px';
     modal.style.zIndex = 9999;
-    modal.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+    modal.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3)';
+    modal.style.fontFamily = 'Arial, sans-serif';
+    modal.style.textAlign = 'center';
+    modal.style.border = '2px solid #000000';
 
+    // Modal Title
+    const title = document.createElement('h2');
+    title.innerText = 'Scan Results';
+    title.style.marginBottom = '15px';
+    title.style.color = '#333';
+    modal.appendChild(title);
+
+    // Prediction Result Text
+    const resultLabel = result === 1 ? 'Safe' : result === -1 ? 'Unsafe' : 'Unknown';
     const resultText = document.createElement('p');
-    resultText.innerText = `Prediction: ${result}`;
+    resultText.innerText = `Prediction: ${resultLabel}`;
+    resultText.style.margin = '10px 0';
+    resultText.style.fontWeight = 'bold';
+
+    // Change color based on prediction value
+    if (result === 1) {
+        resultText.style.color = 'green'; // Green for "Safe"
+    } else if (result === -1) {
+        resultText.style.color = 'red'; // Red for "Unsafe"
+    } else {
+        resultText.style.color = '#555'; // Neutral color for unknown states
+    }
     modal.appendChild(resultText);
 
+    // Prediction Confidence Text
     const probabilityText = document.createElement('p');
     probabilityText.innerText = `Prediction Confidence: ${Math.round(probability * 100)}%`;
+    probabilityText.style.margin = '10px 0';
+    probabilityText.style.color = '#555';
     modal.appendChild(probabilityText);
 
-    // Add "Whitelist URL" button
+    // Add Buttons Container
+    const buttonContainer = document.createElement('div');
+    buttonContainer.style.display = 'flex';
+    buttonContainer.style.justifyContent = 'space-between';
+    buttonContainer.style.marginTop = '20px';
+
+    // Whitelist Button
     const whitelistButton = document.createElement('button');
     whitelistButton.innerText = 'Whitelist URL';
+    whitelistButton.style.padding = '10px 15px';
+    whitelistButton.style.border = 'none';
+    whitelistButton.style.borderRadius = '5px';
+    whitelistButton.style.backgroundColor = '#4CAF50';
+    whitelistButton.style.color = 'white';
+    whitelistButton.style.cursor = 'pointer';
     whitelistButton.onclick = () => {
         chrome.runtime.sendMessage({ action: 'whitelistUrl', url: window.location.href });
         alert('URL has been added to whitelist!');
-        document.body.removeChild(modal); // Close modal
+        document.body.removeChild(modal);
     };
-    modal.appendChild(whitelistButton);
+    buttonContainer.appendChild(whitelistButton);
 
-    // Add "Block URL" button
+    // Block Button
     const blockButton = document.createElement('button');
     blockButton.innerText = 'Block URL';
+    blockButton.style.padding = '10px 15px';
+    blockButton.style.border = 'none';
+    blockButton.style.borderRadius = '5px';
+    blockButton.style.backgroundColor = '#F44336';
+    blockButton.style.color = 'white';
+    blockButton.style.cursor = 'pointer';
     blockButton.onclick = () => {
         chrome.runtime.sendMessage({ action: 'blockUrl', url: window.location.href });
         alert('URL has been blocked!');
-        document.body.removeChild(modal); // Close modal
+        document.body.removeChild(modal);
     };
-    modal.appendChild(blockButton);
+    buttonContainer.appendChild(blockButton);
 
+    // Add Button Container to Modal
+    modal.appendChild(buttonContainer);
+
+    // Close Button
     const closeButton = document.createElement('button');
     closeButton.innerText = 'Close';
+    closeButton.style.padding = '10px 15px';
+    closeButton.style.marginTop = '15px';
+    closeButton.style.border = 'none';
+    closeButton.style.borderRadius = '5px';
+    closeButton.style.backgroundColor = '#555';
+    closeButton.style.color = 'white';
+    closeButton.style.cursor = 'pointer';
     closeButton.onclick = () => document.body.removeChild(modal);
     modal.appendChild(closeButton);
 
+    // Append Modal to Body
     document.body.appendChild(modal);
 }
+
+
+
 
 
 // Listen for the result and show modal

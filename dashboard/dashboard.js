@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateCharts(spamDetected, nonSpamDetected) {
         const data = [spamDetected, nonSpamDetected];
-        const labels = ['Phishing', 'Non-Spam'];
+        const labels = ['Phishing', 'Safe'];
     
         // Destroy previous instances of charts to avoid overlap
         if (pieChart) pieChart.destroy();
@@ -22,19 +22,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 datasets: [{
                     label: 'Scan Results',
                     data: data,
-                    backgroundColor: ['#ff0000', '#008000'],
-                    borderColor: '#EEEEEE',
-                    borderWidth: 1
+                    backgroundColor: ['#ff0000', '#008000'], // Colors for each section
+                    borderColor: '#ffffff', // Border color for the divisions
+                    borderWidth: 2 // Border width to make it more visible
                 }]
             },
             options: {
                 responsive: true,
                 plugins: {
-                    legend: { position: 'top' },
-                    title: { display: true, text: 'Phishing vs. Non-Spam' }
+                    legend: { 
+                        position: 'top' 
+                    },
+                    title: { 
+                        display: true, 
+                        text: 'Phishing vs. Safe' 
+                    }
                 }
             }
         });
+        
     
         // Initialize bar chart
         barChart = new Chart(document.getElementById('barChart'), {
@@ -45,8 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     label: 'Number of Scans',
                     data: data,
                     backgroundColor: ['#ff0000', '#008000'],
-                    borderColor: '#151515',
-                    borderWidth: 1
+                    borderColor: '#ffffff',
+                    borderWidth: 2
                 }]
             },
             options: {
@@ -54,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 scales: { y: { beginAtZero: true } },
                 plugins: {
                     legend: { display: false },
-                    title: { display: true, text: 'Phishing and Non-Spam Counts' }
+                    title: { display: true, text: 'Phishing and Safe' }
                 }
             }
         });
