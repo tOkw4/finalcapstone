@@ -182,10 +182,20 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
 // Listen for URL scan result and show modal
+// Listen for URL scan result and show modal
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    console.log("Received message in content script:", request); // Add this line
+    console.log("Received message in content script:", request); // Debug log
+
     if (request.action === 'showUrlScanResult') {
-        showUrlScanModal(request.result, request.probability);
+        const result = Number(request.result); // Ensure result is converted to a number
+        const probability = request.probability;
+
+        // Only show the modal if the prediction result is -1 (unsafe)
+        if (result === -1) {
+            showUrlScanModal(result, probability);
+        } else {
+            console.log("Prediction is safe (1). No modal displayed.");
+        }
     }
 });
 
