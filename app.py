@@ -20,11 +20,44 @@ from csv import reader
 import os
 import sys
 from csv import reader
+import time
+import threading
+from pystray import Icon, Menu, MenuItem
+from PIL import Image, ImageDraw
+import ctypes
 
 
 app = Flask(__name__)
 
-# Helper function to locate resources
+
+def load_icon(icon_path):
+    """Load the icon file."""
+    return Image.open(icon_path)
+
+
+# Function to manage the system tray
+
+
+def tray_icon():
+    """Set up and display the system tray icon."""
+    menu = Menu(
+        MenuItem('Exit', lambda: icon.stop())  # Add an exit option
+    )
+    # Path to your icon file
+    icon_path = "icon.ico"
+
+    # Create the tray icon
+    global icon
+    icon = Icon("MyApp", load_icon(icon_path), "Stinky", menu)
+    icon.run()
+
+# Hide the console window
+
+
+def hide_console():
+    ctypes.windll.user32.ShowWindow(
+        ctypes.windll.kernel32.GetConsoleWindow(), 0)
+###################
 
 
 def resource_path(relative_path):
@@ -392,5 +425,18 @@ def predict_URL():
     return jsonify({'prediction': result, 'probability': probability})
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# Function to start Flask server
+def start_flask():
+    app.run(debug=True, use_reloader=False)
+
+
+if __name__ == "__main__":
+    # Hide console window
+    hide_console()
+
+    # Start Flask server in a separate thread
+    flask_thread = threading.Thread(target=start_flask, daemon=True)
+    flask_thread.start()
+
+    # Start the system tray icon
+    tray_icon()
