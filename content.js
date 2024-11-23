@@ -190,14 +190,14 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         const result = Number(request.result); // Ensure result is converted to a number
         const probability = request.probability;
 
-        // Only show the modal if the prediction result is -1 (unsafe)
-        if (result === -1) {
-            showUrlScanModal(result, probability);
-        } else {
-            console.log("Prediction is safe (1). No modal displayed.");
-        }
+        console.log("Prediction result:", result);
+        console.log("Prediction probability:", probability);
+
+        // Show the modal regardless of result value
+        showUrlScanModal(result, probability);
     }
 });
+
 
 
 // ********************************************************

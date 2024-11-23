@@ -16,7 +16,6 @@ function saveScanHistory(sender, title, result) {
     });
 }
 
-
 // ************************
 
 // Cache blocked URLs and rule IDs in memory
@@ -55,12 +54,12 @@ function normalizeUrl(url) {
         return ''; // Return an empty string if URL parsing fails
     }
 }
+
 // Check if the URL is whitelisted
 function isWhitelisted(url) {
     const normalizedUrl = normalizeUrl(url);
     return whitelistCache.some(entry => entry.url === normalizedUrl);
 }
-
 
 // Listen for messages to handle URL blocking, whitelisting, and unblocking
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
@@ -184,9 +183,6 @@ function updateBlockingRules() {
     });
 }
 
-
-
-
 // Display blocked URLs
 function displayBlockedUrls() {
     chrome.storage.local.get('blockedUrls', (data) => {
@@ -294,32 +290,41 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (changeInfo.status === "complete" && tab.active) {
         const currentUrl = tab.url;
 
-        // Log to see the current URL
-        console.log("Checking URL:", currentUrl);
+        console.log("Checking URL:", currentUrl); // Debug log
 
+        // Skip whitelisted URLs
         if (whitelistCache.some(entry => entry.url === currentUrl)) {
             console.log("URL is whitelisted, skipping scan:", currentUrl);
-            return; // Skip if it's whitelisted
-        }
-
-        // Check if the URL is in the blocklist
-        if (blockedUrlsCache.includes(currentUrl)) {
-            console.log("URL is blocked, blocking:", currentUrl);
-            // Perform blocking behavior if necessary
             return;
         }
 
-        // Proceed with phishing detection if not blocked or whitelisted
+        // Check if the URL is blocked
+        if (blockedUrlsCache.includes(currentUrl)) {
+            console.log("URL is blocked, blocking:", currentUrl);
+            return;
+        }
+
+        // Proceed with phishing detection
         fetch('http://localhost:5000/post', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ URL: currentUrl })
         })
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                return response.json().then(err => {
+                    console.error("Error response from Flask API:", err);
+                    throw new Error(`Server error: ${err.error}`);
+                });
+            }
+            return response.json();
+        })
         .then(data => {
+            console.log("Received data from Flask API:", data); // Debug log
             const result = data.prediction;
             const probability = data.probability;
-
+        
+            // Send result to content.js
             chrome.tabs.sendMessage(tabId, {
                 action: 'showUrlScanResult',
                 result,
@@ -327,5 +332,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
             });
         })
         .catch(error => console.error("Error contacting Flask API:", error));
+        
+        
     }
 });

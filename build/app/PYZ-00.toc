@@ -690,12 +690,58 @@
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\dateutil\\_version.py',
    'PYMODULE'),
+  ('dateutil.easter',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\dateutil\\easter.py',
+   'PYMODULE'),
+  ('dateutil.parser',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\dateutil\\parser\\__init__.py',
+   'PYMODULE'),
+  ('dateutil.parser._parser',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\dateutil\\parser\\_parser.py',
+   'PYMODULE'),
+  ('dateutil.parser.isoparser',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\dateutil\\parser\\isoparser.py',
+   'PYMODULE'),
   ('dateutil.relativedelta',
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\dateutil\\relativedelta.py',
    'PYMODULE'),
-  ('dbm', 'C:\\Users\\leonard\\Documents\\Lib\\dbm\\__init__.py', 'PYMODULE'),
-  ('dbm.ndbm', 'C:\\Users\\leonard\\Documents\\Lib\\dbm\\ndbm.py', 'PYMODULE'),
+  ('dateutil.rrule',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\dateutil\\rrule.py',
+   'PYMODULE'),
+  ('dateutil.tz',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\dateutil\\tz\\__init__.py',
+   'PYMODULE'),
+  ('dateutil.tz._common',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\dateutil\\tz\\_common.py',
+   'PYMODULE'),
+  ('dateutil.tz._factories',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\dateutil\\tz\\_factories.py',
+   'PYMODULE'),
+  ('dateutil.tz.tz',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\dateutil\\tz\\tz.py',
+   'PYMODULE'),
+  ('dateutil.tz.win',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\dateutil\\tz\\win.py',
+   'PYMODULE'),
+  ('dateutil.utils',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\dateutil\\utils.py',
+   'PYMODULE'),
+  ('dateutil.zoneinfo',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\dateutil\\zoneinfo\\__init__.py',
+   'PYMODULE'),
   ('decimal', 'C:\\Users\\leonard\\Documents\\Lib\\decimal.py', 'PYMODULE'),
   ('difflib', 'C:\\Users\\leonard\\Documents\\Lib\\difflib.py', 'PYMODULE'),
   ('dis', 'C:\\Users\\leonard\\Documents\\Lib\\dis.py', 'PYMODULE'),
@@ -759,6 +805,9 @@
    'PYMODULE'),
   ('email.utils',
    'C:\\Users\\leonard\\Documents\\Lib\\email\\utils.py',
+   'PYMODULE'),
+  ('feature',
+   'C:\\Users\\leandro\\Desktop\\again and again\\feature.py',
    'PYMODULE'),
   ('fileinput', 'C:\\Users\\leonard\\Documents\\Lib\\fileinput.py', 'PYMODULE'),
   ('filelock',
@@ -913,6 +962,10 @@
   ('getpass', 'C:\\Users\\leonard\\Documents\\Lib\\getpass.py', 'PYMODULE'),
   ('gettext', 'C:\\Users\\leonard\\Documents\\Lib\\gettext.py', 'PYMODULE'),
   ('glob', 'C:\\Users\\leonard\\Documents\\Lib\\glob.py', 'PYMODULE'),
+  ('googlesearch',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\googlesearch\\__init__.py',
+   'PYMODULE'),
   ('gzip', 'C:\\Users\\leonard\\Documents\\Lib\\gzip.py', 'PYMODULE'),
   ('hashlib', 'C:\\Users\\leonard\\Documents\\Lib\\hashlib.py', 'PYMODULE'),
   ('hmac', 'C:\\Users\\leonard\\Documents\\Lib\\hmac.py', 'PYMODULE'),
@@ -1626,10 +1679,6 @@
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\numpy\\core\\__init__.py',
    'PYMODULE'),
-  ('numpy.core._multiarray_umath',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\numpy\\core\\_multiarray_umath.py',
-   'PYMODULE'),
   ('numpy.core._utils',
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\numpy\\core\\_utils.py',
@@ -1995,6 +2044,7 @@
    'again\\.venv\\Lib\\site-packages\\numpy\\version.py',
    'PYMODULE'),
   ('opcode', 'C:\\Users\\leonard\\Documents\\Lib\\opcode.py', 'PYMODULE'),
+  ('optparse', 'C:\\Users\\leonard\\Documents\\Lib\\optparse.py', 'PYMODULE'),
   ('packaging',
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\packaging\\__init__.py',
@@ -2059,9 +2109,1144 @@
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\packaging\\version.py',
    'PYMODULE'),
+  ('pandas',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\__init__.py',
+   'PYMODULE'),
+  ('pandas._config',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_config\\__init__.py',
+   'PYMODULE'),
+  ('pandas._config.config',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_config\\config.py',
+   'PYMODULE'),
+  ('pandas._config.dates',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_config\\dates.py',
+   'PYMODULE'),
+  ('pandas._config.display',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_config\\display.py',
+   'PYMODULE'),
+  ('pandas._config.localization',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_config\\localization.py',
+   'PYMODULE'),
+  ('pandas._libs',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_libs\\__init__.py',
+   'PYMODULE'),
+  ('pandas._libs.tslibs',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_libs\\tslibs\\__init__.py',
+   'PYMODULE'),
+  ('pandas._libs.window',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_libs\\window\\__init__.py',
+   'PYMODULE'),
+  ('pandas._testing',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_testing\\__init__.py',
+   'PYMODULE'),
+  ('pandas._testing._io',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_testing\\_io.py',
+   'PYMODULE'),
+  ('pandas._testing._warnings',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_testing\\_warnings.py',
+   'PYMODULE'),
+  ('pandas._testing.asserters',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_testing\\asserters.py',
+   'PYMODULE'),
+  ('pandas._testing.compat',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_testing\\compat.py',
+   'PYMODULE'),
+  ('pandas._testing.contexts',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_testing\\contexts.py',
+   'PYMODULE'),
+  ('pandas._typing',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_typing.py',
+   'PYMODULE'),
+  ('pandas._version',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_version.py',
+   'PYMODULE'),
+  ('pandas._version_meson',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\_version_meson.py',
+   'PYMODULE'),
+  ('pandas.api',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\api\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.extensions',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\api\\extensions\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.indexers',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\api\\indexers\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.interchange',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\api\\interchange\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.types',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\api\\types\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.typing',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\api\\typing\\__init__.py',
+   'PYMODULE'),
+  ('pandas.arrays',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\arrays\\__init__.py',
+   'PYMODULE'),
+  ('pandas.compat',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\compat\\__init__.py',
+   'PYMODULE'),
+  ('pandas.compat._constants',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\compat\\_constants.py',
+   'PYMODULE'),
+  ('pandas.compat._optional',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\compat\\_optional.py',
+   'PYMODULE'),
+  ('pandas.compat.compressors',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\compat\\compressors.py',
+   'PYMODULE'),
+  ('pandas.compat.numpy',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\compat\\numpy\\__init__.py',
+   'PYMODULE'),
+  ('pandas.compat.numpy.function',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\compat\\numpy\\function.py',
+   'PYMODULE'),
+  ('pandas.compat.pickle_compat',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\compat\\pickle_compat.py',
+   'PYMODULE'),
+  ('pandas.compat.pyarrow',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\compat\\pyarrow.py',
+   'PYMODULE'),
+  ('pandas.core',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core._numba',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core._numba.executor',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\executor.py',
+   'PYMODULE'),
+  ('pandas.core._numba.extensions',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\extensions.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.mean_',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\mean_.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.min_max_',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\min_max_.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.shared',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\shared.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.sum_',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\sum_.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.var_',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\var_.py',
+   'PYMODULE'),
+  ('pandas.core.accessor',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\accessor.py',
+   'PYMODULE'),
+  ('pandas.core.algorithms',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\algorithms.py',
+   'PYMODULE'),
+  ('pandas.core.api',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\api.py',
+   'PYMODULE'),
+  ('pandas.core.apply',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\apply.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.datetimelike_accumulations',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\datetimelike_accumulations.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.masked_accumulations',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\masked_accumulations.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.masked_reductions',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\masked_reductions.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.putmask',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\putmask.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.quantile',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\quantile.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.replace',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\replace.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.take',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\take.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.transforms',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\array_algos\\transforms.py',
+   'PYMODULE'),
+  ('pandas.core.arraylike',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arraylike.py',
+   'PYMODULE'),
+  ('pandas.core.arrays',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._arrow_string_mixins',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\_arrow_string_mixins.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._mixins',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\_mixins.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._ranges',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\_ranges.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._utils',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\_utils.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow._arrow_utils',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\_arrow_utils.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow.accessors',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\accessors.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow.array',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\array.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow.extension_types',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\extension_types.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.base',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\base.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.boolean',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\boolean.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.categorical',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\categorical.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.datetimelike',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\datetimelike.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.datetimes',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\datetimes.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.floating',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\floating.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.integer',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\integer.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.interval',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\interval.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.masked',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\masked.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.numeric',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\numeric.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.numpy_',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\numpy_.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.period',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\period.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.accessor',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\accessor.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.array',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\array.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.scipy_sparse',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\scipy_sparse.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.string_',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\string_.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.string_arrow',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\string_arrow.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.timedeltas',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\arrays\\timedeltas.py',
+   'PYMODULE'),
+  ('pandas.core.base',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\base.py',
+   'PYMODULE'),
+  ('pandas.core.common',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\common.py',
+   'PYMODULE'),
+  ('pandas.core.computation',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.computation.align',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\align.py',
+   'PYMODULE'),
+  ('pandas.core.computation.api',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\api.py',
+   'PYMODULE'),
+  ('pandas.core.computation.check',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\check.py',
+   'PYMODULE'),
+  ('pandas.core.computation.common',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\common.py',
+   'PYMODULE'),
+  ('pandas.core.computation.engines',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\engines.py',
+   'PYMODULE'),
+  ('pandas.core.computation.eval',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\eval.py',
+   'PYMODULE'),
+  ('pandas.core.computation.expr',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\expr.py',
+   'PYMODULE'),
+  ('pandas.core.computation.expressions',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\expressions.py',
+   'PYMODULE'),
+  ('pandas.core.computation.ops',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\ops.py',
+   'PYMODULE'),
+  ('pandas.core.computation.parsing',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\parsing.py',
+   'PYMODULE'),
+  ('pandas.core.computation.pytables',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\pytables.py',
+   'PYMODULE'),
+  ('pandas.core.computation.scope',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\computation\\scope.py',
+   'PYMODULE'),
+  ('pandas.core.config_init',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\config_init.py',
+   'PYMODULE'),
+  ('pandas.core.construction',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\construction.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.api',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\api.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.astype',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\astype.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.base',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\base.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.cast',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\cast.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.common',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\common.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.concat',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\concat.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.dtypes',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\dtypes.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.generic',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\generic.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.inference',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\inference.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.missing',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\missing.py',
+   'PYMODULE'),
+  ('pandas.core.flags',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\flags.py',
+   'PYMODULE'),
+  ('pandas.core.frame',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\frame.py',
+   'PYMODULE'),
+  ('pandas.core.generic',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\generic.py',
+   'PYMODULE'),
+  ('pandas.core.groupby',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.base',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\base.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.categorical',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\categorical.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.generic',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\generic.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.groupby',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\groupby.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.grouper',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\grouper.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.indexing',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\indexing.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.numba_',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\numba_.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.ops',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\ops.py',
+   'PYMODULE'),
+  ('pandas.core.indexers',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexers\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.indexers.objects',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexers\\objects.py',
+   'PYMODULE'),
+  ('pandas.core.indexers.utils',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexers\\utils.py',
+   'PYMODULE'),
+  ('pandas.core.indexes',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.accessors',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\accessors.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.api',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\api.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.base',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\base.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.category',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\category.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.datetimelike',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\datetimelike.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.datetimes',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\datetimes.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.extension',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\extension.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.frozen',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\frozen.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.interval',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\interval.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.multi',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\multi.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.period',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\period.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.range',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\range.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.timedeltas',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\timedeltas.py',
+   'PYMODULE'),
+  ('pandas.core.indexing',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\indexing.py',
+   'PYMODULE'),
+  ('pandas.core.interchange',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.buffer',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\buffer.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.column',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\column.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.dataframe',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\dataframe.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.dataframe_protocol',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\dataframe_protocol.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.from_dataframe',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\from_dataframe.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.utils',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\interchange\\utils.py',
+   'PYMODULE'),
+  ('pandas.core.internals',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.internals.api',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\api.py',
+   'PYMODULE'),
+  ('pandas.core.internals.array_manager',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\array_manager.py',
+   'PYMODULE'),
+  ('pandas.core.internals.base',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\base.py',
+   'PYMODULE'),
+  ('pandas.core.internals.blocks',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\blocks.py',
+   'PYMODULE'),
+  ('pandas.core.internals.concat',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\concat.py',
+   'PYMODULE'),
+  ('pandas.core.internals.construction',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\construction.py',
+   'PYMODULE'),
+  ('pandas.core.internals.managers',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\managers.py',
+   'PYMODULE'),
+  ('pandas.core.internals.ops',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\internals\\ops.py',
+   'PYMODULE'),
+  ('pandas.core.methods',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\methods\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.methods.describe',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\methods\\describe.py',
+   'PYMODULE'),
+  ('pandas.core.methods.selectn',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\methods\\selectn.py',
+   'PYMODULE'),
+  ('pandas.core.methods.to_dict',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\methods\\to_dict.py',
+   'PYMODULE'),
+  ('pandas.core.missing',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\missing.py',
+   'PYMODULE'),
+  ('pandas.core.nanops',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\nanops.py',
+   'PYMODULE'),
+  ('pandas.core.ops',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.ops.array_ops',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\array_ops.py',
+   'PYMODULE'),
+  ('pandas.core.ops.common',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\common.py',
+   'PYMODULE'),
+  ('pandas.core.ops.dispatch',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\dispatch.py',
+   'PYMODULE'),
+  ('pandas.core.ops.docstrings',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\docstrings.py',
+   'PYMODULE'),
+  ('pandas.core.ops.invalid',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\invalid.py',
+   'PYMODULE'),
+  ('pandas.core.ops.mask_ops',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\mask_ops.py',
+   'PYMODULE'),
+  ('pandas.core.ops.missing',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\ops\\missing.py',
+   'PYMODULE'),
+  ('pandas.core.resample',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\resample.py',
+   'PYMODULE'),
+  ('pandas.core.reshape',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.api',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\api.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.concat',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\concat.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.encoding',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\encoding.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.melt',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\melt.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.merge',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\merge.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.pivot',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\pivot.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.reshape',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\reshape.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.tile',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\tile.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.util',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\reshape\\util.py',
+   'PYMODULE'),
+  ('pandas.core.roperator',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\roperator.py',
+   'PYMODULE'),
+  ('pandas.core.sample',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\sample.py',
+   'PYMODULE'),
+  ('pandas.core.series',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\series.py',
+   'PYMODULE'),
+  ('pandas.core.shared_docs',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\shared_docs.py',
+   'PYMODULE'),
+  ('pandas.core.sorting',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\sorting.py',
+   'PYMODULE'),
+  ('pandas.core.strings',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\strings\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.strings.accessor',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\strings\\accessor.py',
+   'PYMODULE'),
+  ('pandas.core.strings.base',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\strings\\base.py',
+   'PYMODULE'),
+  ('pandas.core.strings.object_array',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\strings\\object_array.py',
+   'PYMODULE'),
+  ('pandas.core.tools',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\tools\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.tools.datetimes',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\tools\\datetimes.py',
+   'PYMODULE'),
+  ('pandas.core.tools.numeric',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\tools\\numeric.py',
+   'PYMODULE'),
+  ('pandas.core.tools.timedeltas',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\tools\\timedeltas.py',
+   'PYMODULE'),
+  ('pandas.core.tools.times',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\tools\\times.py',
+   'PYMODULE'),
+  ('pandas.core.util',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\util\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.util.hashing',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\util\\hashing.py',
+   'PYMODULE'),
+  ('pandas.core.util.numba_',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\util\\numba_.py',
+   'PYMODULE'),
+  ('pandas.core.window',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\window\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.window.common',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\window\\common.py',
+   'PYMODULE'),
+  ('pandas.core.window.doc',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\window\\doc.py',
+   'PYMODULE'),
+  ('pandas.core.window.ewm',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\window\\ewm.py',
+   'PYMODULE'),
+  ('pandas.core.window.expanding',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\window\\expanding.py',
+   'PYMODULE'),
+  ('pandas.core.window.numba_',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\window\\numba_.py',
+   'PYMODULE'),
+  ('pandas.core.window.online',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\window\\online.py',
+   'PYMODULE'),
+  ('pandas.core.window.rolling',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\core\\window\\rolling.py',
+   'PYMODULE'),
+  ('pandas.errors',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\errors\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io._util',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\_util.py',
+   'PYMODULE'),
+  ('pandas.io.api',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\api.py',
+   'PYMODULE'),
+  ('pandas.io.clipboard',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\clipboard\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.clipboards',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\clipboards.py',
+   'PYMODULE'),
+  ('pandas.io.common',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\common.py',
+   'PYMODULE'),
+  ('pandas.io.excel',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.excel._base',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_base.py',
+   'PYMODULE'),
+  ('pandas.io.excel._calamine',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_calamine.py',
+   'PYMODULE'),
+  ('pandas.io.excel._odfreader',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_odfreader.py',
+   'PYMODULE'),
+  ('pandas.io.excel._odswriter',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_odswriter.py',
+   'PYMODULE'),
+  ('pandas.io.excel._openpyxl',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_openpyxl.py',
+   'PYMODULE'),
+  ('pandas.io.excel._pyxlsb',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_pyxlsb.py',
+   'PYMODULE'),
+  ('pandas.io.excel._util',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_util.py',
+   'PYMODULE'),
+  ('pandas.io.excel._xlrd',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_xlrd.py',
+   'PYMODULE'),
+  ('pandas.io.excel._xlsxwriter',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\excel\\_xlsxwriter.py',
+   'PYMODULE'),
+  ('pandas.io.feather_format',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\feather_format.py',
+   'PYMODULE'),
+  ('pandas.io.formats',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.formats._color_data',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\_color_data.py',
+   'PYMODULE'),
+  ('pandas.io.formats.console',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\console.py',
+   'PYMODULE'),
+  ('pandas.io.formats.css',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\css.py',
+   'PYMODULE'),
+  ('pandas.io.formats.csvs',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\csvs.py',
+   'PYMODULE'),
+  ('pandas.io.formats.excel',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\excel.py',
+   'PYMODULE'),
+  ('pandas.io.formats.format',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\format.py',
+   'PYMODULE'),
+  ('pandas.io.formats.html',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\html.py',
+   'PYMODULE'),
+  ('pandas.io.formats.info',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\info.py',
+   'PYMODULE'),
+  ('pandas.io.formats.printing',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\printing.py',
+   'PYMODULE'),
+  ('pandas.io.formats.string',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\string.py',
+   'PYMODULE'),
+  ('pandas.io.formats.style',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\style.py',
+   'PYMODULE'),
+  ('pandas.io.formats.style_render',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\style_render.py',
+   'PYMODULE'),
+  ('pandas.io.formats.xml',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\formats\\xml.py',
+   'PYMODULE'),
+  ('pandas.io.gbq',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\gbq.py',
+   'PYMODULE'),
+  ('pandas.io.html',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\html.py',
+   'PYMODULE'),
+  ('pandas.io.json',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\json\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.json._json',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\json\\_json.py',
+   'PYMODULE'),
+  ('pandas.io.json._normalize',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\json\\_normalize.py',
+   'PYMODULE'),
+  ('pandas.io.json._table_schema',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\json\\_table_schema.py',
+   'PYMODULE'),
+  ('pandas.io.orc',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\orc.py',
+   'PYMODULE'),
+  ('pandas.io.parquet',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\parquet.py',
+   'PYMODULE'),
+  ('pandas.io.parsers',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.arrow_parser_wrapper',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\arrow_parser_wrapper.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.base_parser',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\base_parser.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.c_parser_wrapper',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\c_parser_wrapper.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.python_parser',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\python_parser.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.readers',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\readers.py',
+   'PYMODULE'),
+  ('pandas.io.pickle',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\pickle.py',
+   'PYMODULE'),
+  ('pandas.io.pytables',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\pytables.py',
+   'PYMODULE'),
+  ('pandas.io.sas',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\sas\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sas7bdat',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\sas\\sas7bdat.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sas_constants',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\sas\\sas_constants.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sas_xport',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\sas\\sas_xport.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sasreader',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\sas\\sasreader.py',
+   'PYMODULE'),
+  ('pandas.io.spss',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\spss.py',
+   'PYMODULE'),
+  ('pandas.io.sql',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\sql.py',
+   'PYMODULE'),
+  ('pandas.io.stata',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\stata.py',
+   'PYMODULE'),
+  ('pandas.io.xml',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\io\\xml.py',
+   'PYMODULE'),
+  ('pandas.plotting',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\plotting\\__init__.py',
+   'PYMODULE'),
+  ('pandas.plotting._core',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\plotting\\_core.py',
+   'PYMODULE'),
+  ('pandas.plotting._misc',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\plotting\\_misc.py',
+   'PYMODULE'),
+  ('pandas.testing',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\testing.py',
+   'PYMODULE'),
+  ('pandas.tseries',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\tseries\\__init__.py',
+   'PYMODULE'),
+  ('pandas.tseries.api',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\tseries\\api.py',
+   'PYMODULE'),
+  ('pandas.tseries.frequencies',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\tseries\\frequencies.py',
+   'PYMODULE'),
+  ('pandas.tseries.holiday',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\tseries\\holiday.py',
+   'PYMODULE'),
+  ('pandas.tseries.offsets',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\tseries\\offsets.py',
+   'PYMODULE'),
+  ('pandas.util',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\util\\__init__.py',
+   'PYMODULE'),
+  ('pandas.util._decorators',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\util\\_decorators.py',
+   'PYMODULE'),
+  ('pandas.util._exceptions',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\util\\_exceptions.py',
+   'PYMODULE'),
+  ('pandas.util._print_versions',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\util\\_print_versions.py',
+   'PYMODULE'),
+  ('pandas.util._tester',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\util\\_tester.py',
+   'PYMODULE'),
+  ('pandas.util._validators',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\util\\_validators.py',
+   'PYMODULE'),
+  ('pandas.util.version',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pandas\\util\\version\\__init__.py',
+   'PYMODULE'),
   ('pathlib', 'C:\\Users\\leonard\\Documents\\Lib\\pathlib.py', 'PYMODULE'),
   ('pdb', 'C:\\Users\\leonard\\Documents\\Lib\\pdb.py', 'PYMODULE'),
   ('pickle', 'C:\\Users\\leonard\\Documents\\Lib\\pickle.py', 'PYMODULE'),
+  ('pickletools',
+   'C:\\Users\\leonard\\Documents\\Lib\\pickletools.py',
+   'PYMODULE'),
   ('pkg_resources',
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\pkg_resources\\__init__.py',
@@ -2299,6 +3484,26 @@
   ('pystray._xorg',
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\pystray\\_xorg.py',
+   'PYMODULE'),
+  ('pytz',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pytz\\__init__.py',
+   'PYMODULE'),
+  ('pytz.exceptions',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pytz\\exceptions.py',
+   'PYMODULE'),
+  ('pytz.lazy',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pytz\\lazy.py',
+   'PYMODULE'),
+  ('pytz.tzfile',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pytz\\tzfile.py',
+   'PYMODULE'),
+  ('pytz.tzinfo',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\pytz\\tzinfo.py',
    'PYMODULE'),
   ('queue', 'C:\\Users\\leonard\\Documents\\Lib\\queue.py', 'PYMODULE'),
   ('quopri', 'C:\\Users\\leonard\\Documents\\Lib\\quopri.py', 'PYMODULE'),
@@ -4041,6 +5246,18 @@
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\sklearn\\cluster\\_spectral.py',
    'PYMODULE'),
+  ('sklearn.compose',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\compose\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.compose._column_transformer',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\compose\\_column_transformer.py',
+   'PYMODULE'),
+  ('sklearn.compose._target',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\compose\\_target.py',
+   'PYMODULE'),
   ('sklearn.covariance',
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\sklearn\\covariance\\__init__.py',
@@ -4116,6 +5333,66 @@
   ('sklearn.discriminant_analysis',
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\sklearn\\discriminant_analysis.py',
+   'PYMODULE'),
+  ('sklearn.dummy',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\dummy.py',
+   'PYMODULE'),
+  ('sklearn.ensemble',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\ensemble\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.ensemble._bagging',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\ensemble\\_bagging.py',
+   'PYMODULE'),
+  ('sklearn.ensemble._base',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\ensemble\\_base.py',
+   'PYMODULE'),
+  ('sklearn.ensemble._forest',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\ensemble\\_forest.py',
+   'PYMODULE'),
+  ('sklearn.ensemble._gb',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\ensemble\\_gb.py',
+   'PYMODULE'),
+  ('sklearn.ensemble._hist_gradient_boosting',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.ensemble._hist_gradient_boosting.binning',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\binning.py',
+   'PYMODULE'),
+  ('sklearn.ensemble._hist_gradient_boosting.gradient_boosting',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\gradient_boosting.py',
+   'PYMODULE'),
+  ('sklearn.ensemble._hist_gradient_boosting.grower',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\grower.py',
+   'PYMODULE'),
+  ('sklearn.ensemble._hist_gradient_boosting.predictor',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\predictor.py',
+   'PYMODULE'),
+  ('sklearn.ensemble._iforest',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\ensemble\\_iforest.py',
+   'PYMODULE'),
+  ('sklearn.ensemble._stacking',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\ensemble\\_stacking.py',
+   'PYMODULE'),
+  ('sklearn.ensemble._voting',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\ensemble\\_voting.py',
+   'PYMODULE'),
+  ('sklearn.ensemble._weight_boosting',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\ensemble\\_weight_boosting.py',
    'PYMODULE'),
   ('sklearn.exceptions',
    'C:\\Users\\leandro\\Desktop\\again and '
@@ -4449,6 +5726,10 @@
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\sklearn\\neighbors\\_unsupervised.py',
    'PYMODULE'),
+  ('sklearn.pipeline',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\pipeline.py',
+   'PYMODULE'),
   ('sklearn.preprocessing',
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\sklearn\\preprocessing\\__init__.py',
@@ -4601,6 +5882,10 @@
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\sklearn\\utils\\_testing.py',
    'PYMODULE'),
+  ('sklearn.utils._user_interface',
+   'C:\\Users\\leandro\\Desktop\\again and '
+   'again\\.venv\\Lib\\site-packages\\sklearn\\utils\\_user_interface.py',
+   'PYMODULE'),
   ('sklearn.utils.class_weight',
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\sklearn\\utils\\class_weight.py',
@@ -4693,6 +5978,15 @@
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\soupsieve\\util.py',
    'PYMODULE'),
+  ('sqlite3',
+   'C:\\Users\\leonard\\Documents\\Lib\\sqlite3\\__init__.py',
+   'PYMODULE'),
+  ('sqlite3.dbapi2',
+   'C:\\Users\\leonard\\Documents\\Lib\\sqlite3\\dbapi2.py',
+   'PYMODULE'),
+  ('sqlite3.dump',
+   'C:\\Users\\leonard\\Documents\\Lib\\sqlite3\\dump.py',
+   'PYMODULE'),
   ('ssl', 'C:\\Users\\leonard\\Documents\\Lib\\ssl.py', 'PYMODULE'),
   ('statistics',
    'C:\\Users\\leonard\\Documents\\Lib\\statistics.py',
@@ -4713,6 +6007,7 @@
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\threadpoolctl.py',
    'PYMODULE'),
+  ('timeit', 'C:\\Users\\leonard\\Documents\\Lib\\timeit.py', 'PYMODULE'),
   ('tldextract',
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\tldextract\\__init__.py',
@@ -5128,115 +6423,43 @@
    'C:\\Users\\leandro\\Desktop\\again and '
    'again\\.venv\\Lib\\site-packages\\whois\\__init__.py',
    'PYMODULE'),
-  ('whois.cache',
+  ('whois.parser',
    'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\cache\\__init__.py',
+   'again\\.venv\\Lib\\site-packages\\whois\\parser.py',
    'PYMODULE'),
-  ('whois.cache.dbmCache',
+  ('whois.time_zones',
    'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\cache\\dbmCache.py',
+   'again\\.venv\\Lib\\site-packages\\whois\\time_zones.py',
    'PYMODULE'),
-  ('whois.cache.dummyCache',
+  ('whois.whois',
    'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\cache\\dummyCache.py',
-   'PYMODULE'),
-  ('whois.cache.redisCache',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\cache\\redisCache.py',
-   'PYMODULE'),
-  ('whois.cache.simpleCacheBase',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\cache\\simpleCacheBase.py',
-   'PYMODULE'),
-  ('whois.cache.simpleCacheWithFile',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\cache\\simpleCacheWithFile.py',
-   'PYMODULE'),
-  ('whois.context',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\context\\__init__.py',
-   'PYMODULE'),
-  ('whois.context.dataContext',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\context\\dataContext.py',
-   'PYMODULE'),
-  ('whois.context.parameterContext',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\context\\parameterContext.py',
-   'PYMODULE'),
-  ('whois.doWhoisCommand',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\doWhoisCommand.py',
-   'PYMODULE'),
-  ('whois.domain',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\domain.py',
-   'PYMODULE'),
-  ('whois.exceptions',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\exceptions.py',
-   'PYMODULE'),
-  ('whois.handleDateStrings',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\handleDateStrings.py',
-   'PYMODULE'),
-  ('whois.helpers',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\helpers.py',
-   'PYMODULE'),
-  ('whois.lastWhois',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\lastWhois.py',
-   'PYMODULE'),
-  ('whois.processWhoisDomainRequest',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\processWhoisDomainRequest.py',
-   'PYMODULE'),
-  ('whois.strings',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\strings\\__init__.py',
-   'PYMODULE'),
-  ('whois.strings.ignoreStrings',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\strings\\ignoreStrings.py',
-   'PYMODULE'),
-  ('whois.strings.noneStrings',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\strings\\noneStrings.py',
-   'PYMODULE'),
-  ('whois.strings.quotaStrings',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\strings\\quotaStrings.py',
-   'PYMODULE'),
-  ('whois.tldDb',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\tldDb\\__init__.py',
-   'PYMODULE'),
-  ('whois.tldDb.finders',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\tldDb\\finders.py',
-   'PYMODULE'),
-  ('whois.tldDb.tld_regexpr',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\tldDb\\tld_regexpr.py',
-   'PYMODULE'),
-  ('whois.tldInfo',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\tldInfo.py',
-   'PYMODULE'),
-  ('whois.version',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\version.py',
-   'PYMODULE'),
-  ('whois.whoisCliInterface',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\whoisCliInterface.py',
-   'PYMODULE'),
-  ('whois.whoisParser',
-   'C:\\Users\\leandro\\Desktop\\again and '
-   'again\\.venv\\Lib\\site-packages\\whois\\whoisParser.py',
+   'again\\.venv\\Lib\\site-packages\\whois\\whois.py',
    'PYMODULE'),
   ('xml', 'C:\\Users\\leonard\\Documents\\Lib\\xml\\__init__.py', 'PYMODULE'),
+  ('xml.dom',
+   'C:\\Users\\leonard\\Documents\\Lib\\xml\\dom\\__init__.py',
+   'PYMODULE'),
+  ('xml.dom.NodeFilter',
+   'C:\\Users\\leonard\\Documents\\Lib\\xml\\dom\\NodeFilter.py',
+   'PYMODULE'),
+  ('xml.dom.domreg',
+   'C:\\Users\\leonard\\Documents\\Lib\\xml\\dom\\domreg.py',
+   'PYMODULE'),
+  ('xml.dom.expatbuilder',
+   'C:\\Users\\leonard\\Documents\\Lib\\xml\\dom\\expatbuilder.py',
+   'PYMODULE'),
+  ('xml.dom.minicompat',
+   'C:\\Users\\leonard\\Documents\\Lib\\xml\\dom\\minicompat.py',
+   'PYMODULE'),
+  ('xml.dom.minidom',
+   'C:\\Users\\leonard\\Documents\\Lib\\xml\\dom\\minidom.py',
+   'PYMODULE'),
+  ('xml.dom.pulldom',
+   'C:\\Users\\leonard\\Documents\\Lib\\xml\\dom\\pulldom.py',
+   'PYMODULE'),
+  ('xml.dom.xmlbuilder',
+   'C:\\Users\\leonard\\Documents\\Lib\\xml\\dom\\xmlbuilder.py',
+   'PYMODULE'),
   ('xml.etree',
    'C:\\Users\\leonard\\Documents\\Lib\\xml\\etree\\__init__.py',
    'PYMODULE'),

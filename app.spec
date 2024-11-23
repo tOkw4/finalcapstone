@@ -5,8 +5,8 @@ a = Analysis(
     ['app.py'],
     pathex=[],
     binaries=[],
-    datas=[('model.pkl', '.'), ('SVM_model.pkl', '.'), ('vectorizer.pkl', '.'), ('Web_Scrapped_websites.csv', '.'), ('icon.ico', '.')],
-    hiddenimports=['sklearn', 'numpy.core.multiarray', 'sklearn.feature_extraction.text', 'numpy.core._multiarray_umath'],
+    datas=[('stacked_model.pkl', '.'), ('vectorizer.pkl', '.'), ('model.pkl', '.'), ('feature.py', '.')],
+    hiddenimports=['numpy.core.multiarray', 'sklearn.feature_extraction.text', 'sklearn.ensemble._stacking'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -35,4 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon=['icon.ico'],
 )
