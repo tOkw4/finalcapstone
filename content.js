@@ -52,10 +52,10 @@ function showModal(result) {
 }
 
 
-function showUrlScanModal(result, probability) {
+function showUrlScanModal(result, probabilities) {
     // Debug the input
     console.log("Prediction result:", result);
-    console.log("Prediction probability:", probability);
+    console.log("Prediction probabilities:", probabilities);
 
     // Ensure result is a number
     result = Number(result);
@@ -101,11 +101,18 @@ function showUrlScanModal(result, probability) {
     modal.appendChild(resultText);
 
     // Prediction Confidence Text
-    const probabilityText = document.createElement('p');
-    probabilityText.innerText = `Prediction Confidence: ${Math.round(probability * 100)}%`;
-    probabilityText.style.margin = '10px 0';
-    probabilityText.style.color = '#555';
-    modal.appendChild(probabilityText);
+    // Prediction Confidence Text
+    const probabilitiesText = document.createElement('p');
+
+    // Ensure probabilities are numbers and format them as percentages
+    const phishingProbability = (probabilities.phishing * 100).toFixed(2);
+    const nonPhishingProbability = (probabilities.non_phishing * 100).toFixed(2);
+    // Update the text to include both phishing and non-phishing probabilities
+    probabilitiesText.innerText = `Phishing Confidence: ${phishingProbability}%\nNon-Phishing Confidence: ${nonPhishingProbability}%`;
+    probabilitiesText.style.margin = '10px 0';
+    probabilitiesText.style.color = '#555';
+    
+    modal.appendChild(probabilitiesText);
 
     // Add Buttons Container
     const buttonContainer = document.createElement('div');
@@ -183,20 +190,28 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
 // Listen for URL scan result and show modal
 // Listen for URL scan result and show modal
+// Listen for URL scan result and show modal
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     console.log("Received message in content script:", request); // Debug log
 
     if (request.action === 'showUrlScanResult') {
         const result = Number(request.result); // Ensure result is converted to a number
-        const probability = request.probability;
+        const probabilities = request.probabilities;
 
         console.log("Prediction result:", result);
-        console.log("Prediction probability:", probability);
+        console.log("Prediction probabilities:", probabilities);
 
-        // Show the modal regardless of result value
-        showUrlScanModal(result, probability);
+        // Skip showing the modal if the prediction is "safe"
+        if (result === 1) { // Assuming 1 represents "safe"
+            console.log("Prediction is safe. Skipping modal display.");
+            return;
+        }
+
+        // Show the modal if prediction is not safe
+        showUrlScanModal(result, probabilities);
     }
 });
+
 
 
 

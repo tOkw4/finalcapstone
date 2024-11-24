@@ -322,17 +322,24 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         .then(data => {
             console.log("Received data from Flask API:", data); // Debug log
             const result = data.prediction;
-            const probability = data.probability;
-        
-            // Send result to content.js
+
+            // Ensure probabilities are numbers
+            const phishingProbability = parseFloat(data.probabilities.phishing);
+            const nonPhishingProbability = parseFloat(data.probabilities.non_phishing);
+
+            console.log("Phishing Probability:", phishingProbability);
+            console.log("Non-Phishing Probability:", nonPhishingProbability);
+
+            // Send result and probabilities to content.js
             chrome.tabs.sendMessage(tabId, {
                 action: 'showUrlScanResult',
                 result,
-                probability
+                probabilities: {
+                    phishing: phishingProbability,
+                    non_phishing: nonPhishingProbability
+                }
             });
         })
-        .catch(error => console.error("Error contacting Flask API:", error));
-        
-        
+        .catch(error => console.error("Error contacting Flask API:", error));        
     }
 });

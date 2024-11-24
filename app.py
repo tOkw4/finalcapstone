@@ -149,6 +149,7 @@ def extract_features_and_predict():
             "phishing": float(y_pro_phishing),
             "non_phishing": float(y_pro_non_phishing),
         }
+
     }), 200
 
 
