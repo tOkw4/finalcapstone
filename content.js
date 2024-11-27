@@ -2,12 +2,16 @@ function getEmailDetails() {
     // Get the email body content
     const emailBody = document.querySelector('div.ii.gt');
     const emailContent = emailBody ? emailBody.innerText : '';
+    console.log("Email Content:", emailContent);
     // Get the sender's email
     const sender = document.querySelector('.gD') ? document.querySelector('.gD').innerText : 'Unknown Sender';
+    console.log("Sender Email:", sender);
     // Get the email title (subject)
     const title = document.querySelector('.hP') ? document.querySelector('.hP').innerText : 'No Title';
+    console.log("Email Title:", title);
     return { emailContent, sender, title };
 }
+
 
 // Function to show a modal with the scan result
 function showModal(result) {
@@ -50,8 +54,7 @@ function showModal(result) {
     modal.appendChild(closeButton);
     document.body.appendChild(modal);
 }
-
-
+// Function to show a modal with the url scan result
 function showUrlScanModal(result, probabilities) {
     // Debug the input
     console.log("Prediction result:", result);
@@ -171,11 +174,6 @@ function showUrlScanModal(result, probabilities) {
     // Append Modal to Body
     document.body.appendChild(modal);
 }
-
-
-
-
-
 // Listen for the result and show modal
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === 'getEmailDetails') {
@@ -187,9 +185,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             `${request.result}`);
     }
 });
-
-// Listen for URL scan result and show modal
-// Listen for URL scan result and show modal
 // Listen for URL scan result and show modal
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     console.log("Received message in content script:", request); // Debug log
@@ -211,12 +206,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         showUrlScanModal(result, probabilities);
     }
 });
-
-
-
-
-// ********************************************************
-// ********************************************************
 // Send message to background script to block the URL
 function blockCurrentUrl(url) {
     chrome.runtime.sendMessage({ action: "blockUrl", url }, (response) => {
@@ -225,6 +214,3 @@ function blockCurrentUrl(url) {
         }
     });
 }
-
-// Add this function to call `blockCurrentUrl` with the desired URL when the button is clicked
-

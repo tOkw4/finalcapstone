@@ -430,7 +430,7 @@ class FeatureExtraction:
         try:
             api_url = "https://similarweb-traffic.p.rapidapi.com/traffic"
             headers = {
-                "x-rapidapi-key": "895f52a5c3msh99d45cf895a4470p1ef067jsn733eded1c83b",
+                "x-rapidapi-key": "df3c54f6dbmsh8404bfe9b12f3f2p10fe3ejsn7e23066b6dd6",
                 "x-rapidapi-host": "similarweb-traffic.p.rapidapi.com"
             }
             domain = url.split('/')[2] if '//' in url else url

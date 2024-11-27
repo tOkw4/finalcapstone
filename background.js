@@ -15,9 +15,6 @@ function saveScanHistory(sender, title, result) {
         });
     });
 }
-
-// ************************
-
 // Cache blocked URLs and rule IDs in memory
 let blockedUrlsCache = [];
 let blockedRuleIds = {};  // Map of URLs to rule IDs
@@ -29,8 +26,6 @@ const rules = blockedUrlsCache.map((url, index) => ({
     action: { type: "block" },
     condition: { urlFilter: url, resourceTypes: ["main_frame"] }
 }));
-
-
 // Initialize blocked and whitelisted URLs from storage
 chrome.storage.local.get({ blockedUrls: [], whitelist: [] }, (data) => {
     blockedUrlsCache = data.blockedUrls || [];
@@ -43,7 +38,6 @@ chrome.storage.local.get({ blockedUrls: [], whitelist: [] }, (data) => {
 
     updateBlockingRules();
 });
-
 // Normalize URL by removing query params and fragments
 function normalizeUrl(url) {
     try {
@@ -54,13 +48,11 @@ function normalizeUrl(url) {
         return ''; // Return an empty string if URL parsing fails
     }
 }
-
 // Check if the URL is whitelisted
 function isWhitelisted(url) {
     const normalizedUrl = normalizeUrl(url);
     return whitelistCache.some(entry => entry.url === normalizedUrl);
 }
-
 // Listen for messages to handle URL blocking, whitelisting, and unblocking
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     const normalizedUrl = normalizeUrl(request.url);
@@ -79,7 +71,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         sendResponse({ success: true });
     }
 });
-
 // Normalize URL function
 function normalizeUrl(url) {
     try {
@@ -90,7 +81,6 @@ function normalizeUrl(url) {
         return url; // Return original URL if parsing fails
     }
 }
-
 function blockUrl(url) {
     const normalizedUrl = normalizeUrl(url); // Normalize the URL
 
@@ -110,7 +100,6 @@ function blockUrl(url) {
         }
     });
 }
-
 // Function to unblock a URL and update rules
 function unblockUrl(url) {
     const normalizedUrl = normalizeUrl(url);
@@ -128,7 +117,6 @@ function unblockUrl(url) {
         });
     });
 }
-
 // Function to add a URL to the whitelist
 function whitelistUrl(url) {
     chrome.storage.local.get({ whitelist: [] }, (data) => {
@@ -141,7 +129,6 @@ function whitelistUrl(url) {
         }
     });
 }
-
 // Function to remove a URL from the whitelist
 function removeWhitelistUrl(url) {
     chrome.storage.local.get({ whitelist: [] }, (data) => {
@@ -152,7 +139,6 @@ function removeWhitelistUrl(url) {
         });
     });
 }
-
 // Update blocking rules based on the blocked URLs in storage
 function updateBlockingRules() {
     chrome.declarativeNetRequest.getDynamicRules((existingRules) => {
@@ -182,7 +168,6 @@ function updateBlockingRules() {
         );
     });
 }
-
 // Display blocked URLs
 function displayBlockedUrls() {
     chrome.storage.local.get('blockedUrls', (data) => {
@@ -209,7 +194,6 @@ function displayBlockedUrls() {
         });
     });
 }
-
 // Sync blocked URLs cache with any changes in chrome.storage.local
 chrome.storage.onChanged.addListener((changes, area) => {
     if (area === 'local') {
@@ -227,7 +211,6 @@ chrome.storage.onChanged.addListener((changes, area) => {
         }
     }
 });
-
 // Function to log blocked URLs and whitelist from storage
 function logBlockedUrls() {
     chrome.storage.local.get(['blockedUrls', 'whitelist'], (data) => {
@@ -235,15 +218,13 @@ function logBlockedUrls() {
         console.log("Whitelist:", data.whitelist);
     });
 }
-
 // Context menu item for scanning emails
 chrome.contextMenus.create({
     id: "scanEmail",
     title: "Scan Email for Phishing",
     contexts: ["all"]
 });
-
-// Add an event listener for the context menu click
+// Add an event listener for the context menu click and for the MAIL 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
     if (info.menuItemId === "scanEmail") {
         // Send a message to the content script to get the email content
@@ -263,7 +244,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
                     chrome.tabs.sendMessage(tab.id, { action: 'showResult', result });
 
                     // Save scan details to localStorage
-                    saveScanHistory(sender, title, result);
+                    saveScanHistory(sender, title, emailContent, result);
                 })
                 .catch(error => console.error("Error contacting Flask API:", error));
             } else {
@@ -272,20 +253,19 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
         });
     }
 });
-
 // Function to save scan results to chrome.storage.local
-function saveScanHistory(sender, title, result) {
+function saveScanHistory(sender, title, emailContent, result) {
     const timestamp = new Date().toLocaleString();
     chrome.storage.local.get('scanHistory', (data) => {
         const scanHistory = data.scanHistory || [];
-        scanHistory.push({ sender, title, result, timestamp });
+        scanHistory.push({ sender, title, emailContent, result, timestamp });
 
         chrome.storage.local.set({ scanHistory }, () => {
-            console.log("Saved scan to chrome.storage.local:", { sender, title, result, timestamp });
+            console.log("Saved scan to chrome.storage.local:", { sender, title, emailContent, result, timestamp });
         });
     });
 }
-
+// Add an event listener for the URL check 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (changeInfo.status === "complete" && tab.active) {
         const currentUrl = tab.url;
