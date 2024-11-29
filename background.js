@@ -224,6 +224,7 @@ chrome.contextMenus.create({
     title: "Scan Email for Phishing",
     contexts: ["all"]
 });
+
 // Add an event listener for the context menu click and for the MAIL 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
     if (info.menuItemId === "scanEmail") {

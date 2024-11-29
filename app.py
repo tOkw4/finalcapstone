@@ -119,7 +119,7 @@ def detect():
 
     # Make a prediction using the model
     prediction = email_model.predict(email_vector_dense)[0]
-    result = "It is a safe mail, don't worry :>" if prediction == 1 else 'Be careful, this mail might be a Phishing'
+    result = "It is a safe mail, don't worry :>" if prediction == 0 else 'Be careful, this mail might be a Phishing'
 
     return jsonify({'result': result})
 

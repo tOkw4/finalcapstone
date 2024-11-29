@@ -13,6 +13,7 @@ function getEmailDetails() {
 }
 
 
+
 // Function to show a modal with the scan result
 function showModal(result) {
     const modal = document.createElement('div');
